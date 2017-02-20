@@ -1,0 +1,12 @@
+<div id="loginForm" login >
+  <div id="loginHeader">
+    <h3> Login </h3>
+  </div>
+  <input type='text' ng-model='Auth.account.username' placeholder=" Username" required/>
+  <br>
+  <input type='password' ng-model='Auth.account.password' placeholder=" Password" required>
+  <br>
+  <div id="loginFooter">
+    <button class="btn-success" ng-click="Auth.login(Auth.account)">Login</button>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>SashiDo.io</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Jasmine test framework assets -->
+	<!--<link rel="shortcut icon" type="image/png" href="jasmine/lib/jasmine-2.4.1/jasmine_favicon.png">-->
+	<!--<link rel="stylesheet" type="text/css" href="jasmine/lib/jasmine-2.4.1/jasmine.css">-->
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-route/angular-route.js"></script>
+	<script src="node_modules/angular-resource/angular-resource.js"></script>
+	<script src="router/app.js"></script>
+</head>
+<body ng-app="app">
+
+<div id="">
+	<div ng-view></div>
+</div>
+
+<!-- Angular app, services, directives, controllers -->
+
+<script src="config/route.js"></script>
+
+<script src="services/vegetables.js"></script>
+<script src="services/auth.js"></script>
+
+<script src="directives/sort.js"></script>
+
+<script src="controllers/vegetable.js"></script>
+<script src="controllers/auth.js"></script>
+
+</body>
+</html>

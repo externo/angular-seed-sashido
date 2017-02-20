@@ -1,0 +1,22 @@
+<form class="navbar-form text-center" role="search">
+  <div class="form-group">
+    <input type="text" ng-model="searchText.title">
+  </div>
+</form>
+
+<table class="table table-hover">
+  <thead>
+  <tr class="info">
+    <th>№</th>
+    <th sort by="order" reverse="reverse" order="'title'">Title</th>
+    <th sort by="order" reverse="reverse" order="'quantity'">Quantity</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="vegetable in Vegetable.vegetables | orderBy:order:reverse | filter:searchText">
+    <td>{{$index + 1}}</td>
+    <td>{{vegetable.title}}</td>
+    <td>{{vegetable.quantity}}</td>
+  </tr>
+  </tbody>
+</table>
